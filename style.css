@@ -1,0 +1,210 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #e0e0e0);
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background: linear-gradient(135deg, #333, #111);
+    color: #f5f5f5;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.theme-toggle button {
+    background-color: #520aa5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.theme-toggle button:hover {
+    background-color: #3a0678;
+}
+
+.input-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #520aa5;
+}
+
+.input-form h2 {
+    border-left: 5px solid #520aa5;
+    padding-left: 15px;
+}
+
+.input-form input, 
+.input-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.input-form input:hover, 
+.input-form textarea:hover {
+    box-shadow: 0 0 5px rgba(82, 10, 165, 0.5);
+    transform: scale(1.02);
+}
+
+.resume {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #4017a1; /* Added left border */
+}
+
+.left-column:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .left-column {
+    background-color: #2c2c2c;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #4017a1;
+    margin: 20px auto;
+}
+
+.right-column {
+    flex: 2;
+    padding: 30px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    border-right: 4px solid #4017a1; /* Added right border */
+}
+
+.right-column:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .right-column {
+    background-color: #262626;
+}
+
+h1, h2 {
+    background-color: #4017a1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added box shadow */
+}
+
+body.dark-theme h1, body.dark-theme h2 {
+    background-color: #520aa5;
+}
+
+.job-title {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    align-items: center; /* Underlined job title */
+    font-size: large;
+    color: #3f09f0;
+}
+/* Adjusting the Education Textarea */
+.input-form textarea {
+    width: 100%;
+    min-height: 80px; /* Larger height */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    resize: vertical; /* Allow resizing vertically */
+}
+
+/* Adding bullets to lists */
+ul li {
+    padding: 5px;
+    color: #333;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    list-style: disc; /* Enable bullets */
+    padding-left: 20px; /* Add space for bullets */
+}
+
+/* Education Formatting */
+.education .education-entry {
+    margin-bottom: 15px;
+}
+
+.education .education-entry p {
+    margin: 0;
+}
+
+.education .education-entry .year-range {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    padding: 5px;
+    /* Removed background color */
+    color: #333;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+
+hr {
+    border: 1px solid #4017a1;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
